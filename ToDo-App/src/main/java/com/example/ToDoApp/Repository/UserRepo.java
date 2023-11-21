@@ -21,6 +21,16 @@ public class UserRepo {
     @Column(length = 45, nullable = false, name = "last_name")
     private String lastname;
 
+    public boolean isEnabled() {
+        return enabled;
+    }
+
+    public void setEnabled(boolean enabled) {
+        this.enabled = enabled;
+    }
+
+    private boolean enabled;
+
     public Integer getId() {
         return id;
     }
